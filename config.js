@@ -3,38 +3,38 @@ const fs = require('fs');
 if (fs.existsSync('config.env')) require('dotenv').config({ path: './config.env' });
 
 function convertToBool(text, fault = 'true') {
-    return text === fault ? true : false;
+return text === fault ? true : false;
 }
 
 module.exports = {
-SESSION_ID: process.env.SESSION_ID || "MEGALODON~MD~JE53QKxR#9_o2WCHHO4oiISu8ZMFbvbNlGU_ufUc0LW0_whGh4u8",
-// add your Session Id 
+SESSION_ID: process.env.SESSION_ID || "MEGALODON~MD~MZYjwaab#WxwK1dSquTEDkDtCfX2w0N6k5H0Ob0vDPoH1rdd4m8I",
+// ajoute Id Sesyon ou
 AUTO_STATUS_SEEN: process.env.AUTO_STATUS_SEEN || "true",
-// make true or false status auto seen
-AUTO_STATUS_REPLY: process.env.AUTO_STATUS_REPLY || "false",
-// make true if you want auto reply on status 
-AUTO_STICKER: process.env.AUTO_STICKER || "true",
- //make true if you want auto sticker   
-AUTO_STATUS_REACT: process.env.AUTO_STATUS_REACT || "true",
-// make true if you want auto reply on status 
-AUTO_STATUS_MSG: process.env.AUTO_STATUS_MSG || "*SEEN YOUR STATUS BY MEGALODON-MD 🤍*",
-// set the auto reply massage on status reply  
-WELCOME: process.env.WELCOME || "true",
-// true if want welcome and goodbye msg in groups    
-ADMIN_EVENTS: process.env.ADMIN_EVENTS || "false",
-// make true to know who dismiss or promoted a member in group
-ANTI_LINK: process.env.ANTI_LINK || "true",
-// make anti link true,false for groups 
-ANTI_DELETE: process.env.ANTI_DELETE || "true",
-// set true false for anti delete     
-ANTI_DEL_PATH: process.env.ANTI_DEL_PATH || "inbox", 
-// change it to 'same' if you want to resend deleted message in same chat     
-MENTION_REPLY: process.env.MENTION_REPLY || "false",
-// make true if want auto voice reply if someone menetion you 
+// fè estati a vre oswa fo otomatikman
+AUTO_STATUS_REPLY: process.env.AUTO_STATUS_REPLY || "fo",
+// fè estati a vre si ou vle repons otomatik sou estati a
+AUTO_STICKER: process.env.AUTO_STICKER || "vre",
+//fè vre si ou vle yon fich otomatik
+AUTO_STATUS_REACT: process.env.AUTO_STATUS_REACT || "vre",
+// fè vre si ou vle yon repons otomatik sou estati a
+AUTO_STATUS_MSG: process.env.AUTO_STATUS_MSG || "*MEGALODON-MD TE WÈ ESTATI W LA 🤍*",
+// mete mesaj repons otomatik la sou repons estati a
+BYENVINI: process.env.BYENVINI || "vre",
+// vre si ou vle yon mesaj byenvini ak orevwa nan gwoup yo
+ADMIN_EVENTS: process.env.ADMIN_EVENTS || "fo",
+// fè vre pou konnen kiyès ki revoke oswa monte yon manm nan gwoup la
+ANTI_LINK: process.env.ANTI_LINK || "vre",
+// fè anti-link vre,fo pou gwoup yo
+ANTI_DELETE: process.env.ANTI_DELETE || "vre",
+// mete vre fo pou anti efase
+ANTI_DEL_PATH: process.env.ANTI_DEL_PATH || "bwat resepsyon",
+// chanje li an 'menm' si ou vle voye mesaj efase a ankò nan menm chat la
+MENTION_REPLY: process.env.MENTION_REPLY || "fo",
+// mete vre si ou vle yon repons vokal otomatik si yon moun mansyone ou
 MENU_IMAGE_URL: process.env.MENU_IMAGE_URL || "https://files.catbox.moe/2ozipw.jpg",
-// add custom menu and mention reply image url
-PREFIX: process.env.PREFIX || ".", 
-// add your prifix for bot   
+// ajoute yon meni pèsonalize epi mansyone URL imaj repons lan
+PREFIX: process.env.PREFIX || ".",
+ // add your prifix for bot   
 BOT_NAME: process.env.BOT_NAME || "𝐌𝐄𝐆𝐀𝐋𝐎𝐃𝐎𝐍-𝐌𝐃",
 // add bot name here for menu
 STICKER_NAME: process.env.STICKER_NAME || "༺᭄࿐𒋲𒋲CHELSON𒋲𒋲༺᭄࿐",
