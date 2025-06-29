@@ -7,7 +7,7 @@ return text === fault ? true : false;
 }
 
 module.exports = {
-SESSION_ID: process.env.SESSION_ID || "MEGALODON~MD~BQ4TDYBS#4O9z8-TzzSIrLqJuafZUXOCZ8_XSvdIGfIW4xiRQvTw",
+SESSION_ID: process.env.SESSION_ID || "MEGALODON~MD~4JgnjCBJ#Ptu4rMr6CaP_3m6HKkMLAYmWc07hVqPf-p-Mepb241w",
 // ajoute Id Sesyon ou
 AUTO_STATUS_SEEN: process.env.AUTO_STATUS_SEEN || "true",
 // fè estati a vre oswa fo otomatikman
